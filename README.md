@@ -209,7 +209,8 @@ The repository explores CI/CD workflows for Terraform, including:
 
 Example pipeline structure:
 
-``` Pull Request
+```
+ Pull Request
     │
     ▼
 Terraform Validate
@@ -235,11 +236,12 @@ AWS services explored include:
 - Amazon ECR  
 
 
-#Continuous Integration Pipeline
+# Continuous Integration Pipeline
 
 Example CI pipeline architecture:
 
-```Developer
+```
+Developer
     │
     ▼
 Git Push / Pull Request
@@ -275,7 +277,8 @@ Topics include:
 Building reusable deployment pipelines for different AWS environments.
 
 Amazon EC2:
-```GitHub Actions
+```
+GitHub Actions
       │
       ▼
 Build Application
@@ -291,7 +294,8 @@ Amazon EC2
 ```  
 
 # Amazon ECS
-```GitHub Actions
+```
+GitHub Actions
       │
       ▼
 Docker Build
@@ -338,7 +342,8 @@ Topics include:
 
 Creating reusable CI/CD components using:
 
-```on:
+``` 
+on:
   workflow_call:
 ``` 
 
@@ -357,7 +362,8 @@ Using OpenID Connect (OIDC) to authenticate GitHub Actions with AWS without stor
 
 Architecture:
 
-```GitHub Actions
+```
+GitHub Actions
       │
       │ OIDC Token
       ▼
@@ -387,7 +393,8 @@ Topics include:
 
 Example architecture:
 
-```GitHub
+```
+GitHub
    │
    ▼
 GitHub Actions
@@ -418,7 +425,8 @@ Creating reusable groups of steps using Composite Actions.
 
 Example structure:
 
-``` .github/
+``` 
+.github/
 └── actions/
     └── custom-action/
         └── action.yml 
@@ -426,7 +434,8 @@ Example structure:
 ``` 
 Example:
 
-``` name: "Custom Composite Action"
+``` 
+name: "Custom Composite Action"
 
 runs:
   using: "composite"
@@ -451,7 +460,8 @@ Topics include:
 
 Example structure:
 
-```custom-action/
+```
+custom-action/
 ├── action.yml
 ├── package.json
 ├── src/
@@ -529,7 +539,8 @@ By working through this repository, I am developing practical experience with:
 
 A possible structure for the repository is:
 
-```.
+```
+.
 ├── .github/
 │   ├── actions/
 │   │   └── custom-actions/
