@@ -1,0 +1,25 @@
+name: Viewing files shared between Jobs
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  jobs-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Ubuntu version
+        run: cat /etc/os-release
+
+      - name: Display a message
+        run: echo "I am taking the LinuxTips GitHUb Actions course" > message.txt
+
+  jobs-2:
+    runs-on: Ubuntu-latest
+    steps:
+      - name: Anything else
+        run: ls -lha
+
+      - name: Access message archive
+        run: cat message.txt
