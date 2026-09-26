@@ -1,9 +1,7 @@
 name: My first Workflow LinuxTips
 
 on:
-  push:
-    branches:
-      - main 
+  workflow_dispatch
 
 jobs:
   giropops:
