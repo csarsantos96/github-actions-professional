@@ -1,4 +1,4 @@
-name: My first Workflow LinuxTips
+name: Viewing files shared between Steps
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main 
 
 jobs:
-  giropops:
+  between-steps:
     runs-on: ubuntu-latest
     
     steps:
