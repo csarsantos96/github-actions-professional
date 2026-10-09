@@ -1,0 +1,23 @@
+name: Viewing files shared between Steps
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  between-steps:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check Ubuntu version
+        run: cat /etc/os-release
+
+      - name: Display a message
+        run: echo "I am taking the LinuxTips GitHUb Actions course" > message.txt
+
+      - name: Other thing
+        run: ls -lha
+      
+      - name: Read file content
+        run: cat message.txt

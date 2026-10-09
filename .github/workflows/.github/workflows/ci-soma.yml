@@ -1,0 +1,21 @@
+name: CI-SOMA
+
+on: 
+  push:
+  pull_request:
+
+jobs:
+  executar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: baixar cogido
+        uses: actions/checkout@v4
+    
+      - name: verificar python
+        run: python --version
+
+      - name: executar aplicação
+        run: python app.py
+
+

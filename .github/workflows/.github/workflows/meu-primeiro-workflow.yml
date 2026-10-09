@@ -1,0 +1,15 @@
+name: My first Workflow LinuxTips
+
+on:
+  workflow_dispatch
+
+jobs:
+  giropops:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check Ubuntu version
+        run: cat /etc/os-release
+
+      - name: Display a message
+        run: echo "I am taking the LinuxTips GitHUb Actions course"
