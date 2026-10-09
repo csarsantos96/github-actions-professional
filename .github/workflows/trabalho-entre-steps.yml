@@ -1,9 +1,10 @@
 name: Viewing files shared between Steps
 
 on:
-  push:
-    branches:
-      - main 
+  workflow_dispatch
+  # push:
+  #   branches:
+  #     - main 
 
 jobs:
   between-steps:
